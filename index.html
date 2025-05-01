@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" async></script>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Bienvenido a la calculadora de IMC</h1>
-        <label for="Edad">Edad:</label>
-        <input type="number" id="Edad">
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre"><br></br>
-        <label for="Peso">Peso:</label>
-        <input type="number" id="Peso" placeholder="Kg">
-        <label for="Estatura">Estatura:</label>
-        <input type="number" id="Estatura" placeholder="m">
-        <button onclick="calculadora()">Calcular</button>
-    </div>
-   
+    <div class="container">
+        <div class="bienvenida"> 
+            <h1>Bienvenido a la calculadora de IMC</h1><br></br>
+        </div>
+        <div class="formulario">
+            <label for="Edad">Edad:</label>
+            <input type="number" id="Edad">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre"><br></br>
+            <label for="Peso">Peso:</label>
+            <input type="number" id="Peso" placeholder="Kg">
+            <label for="Estatura">Estatura:</label>
+            <input type="number" id="Estatura" placeholder="m"><br></br>
+        </div>
+        <button id="calcular" onclick="calculadora()">Calcular</button>
+        <button id="nuevo" onclick="nuevo()">Nuevo</button><br></br>
+        <div id="resultados"></div>
+        <img src="" id="imagen">
 
-    
+    </div>
 </body>
 </html>
