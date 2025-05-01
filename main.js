@@ -10,15 +10,19 @@ function calculadora() {
     if (imc < 18.5){
         resultado.innerHTML = (`${imc.toFixed(1) } ${mensaje} peso inferior al normal`);
         imagen.src = "imagenes/bajo.png";
+        imagen.style.display = "block"; /* para que luego de presionar nuevo y hacer otro calculo aparezca la imagen*/
     } else if (imc >= 18.5 && imc <= 24.9 ){
         resultado.innerHTML = (`${imc.toFixed(1) }${mensaje } normal`);
         imagen.src = "imagenes/normal.png";
+        imagen.style.display = "block";
     } else if (imc >= 25 && imc <= 29.9){
         resultado.innerHTML = (`${imc.toFixed(1) }${mensaje } Peso superior al normal`);
         imagen.src = "imagenes/sobrepeso2.png";
+        imagen.style.display = "block";
     } else if (imc >30){
         resultado.innerHTML = (`${imc.toFixed(1) }${mensaje } obesidad`);
         imagen.src = "imagenes/obeso.png";
+        imagen.style.display = "block";
     } else{
         alert(mensaje2)}
     
