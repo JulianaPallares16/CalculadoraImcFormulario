@@ -14,7 +14,7 @@ function calculadora() {
     } else if (imc >= 18.5 && imc <= 24.9 ){
         resultado.innerHTML = (`${imc.toFixed(1) }${mensaje } normal`);
         imagen.src = "imagenes/normal.png";
-        imagen.style.display = "block";
+        imagen.style.display = "inline"; /*inline para que la imegen no me quede hacia el lado izquierdo*/
     } else if (imc >= 25 && imc <= 29.9){
         resultado.innerHTML = (`${imc.toFixed(1) }${mensaje } Peso superior al normal`);
         imagen.src = "imagenes/sobrepeso2.png";
